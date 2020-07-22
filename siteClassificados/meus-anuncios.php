@@ -6,6 +6,7 @@
          ?>
          <script type="text/javascript">window.location.href="login.php"</script>
          <?php
+         exit;
      }
 ?>
 <!DOCTYPE html>
@@ -36,6 +37,7 @@
 
              foreach($anuncios as $anuncio):
            ?>
+           <tr>
              <td>
                  <?php if(!empty($anuncio['url'])): ?>
                  <img src="img/anuncios/<?php echo $anuncio['url']; ?>" height="50" border="0" />
@@ -51,6 +53,7 @@
                  <a href="excluir-anuncio.php?id=<?php echo $anuncio['id']; ?>" class="btn btn-danger">Excluir</a>
              </td>
              <?php endforeach; ?>
+             </tr>
        </table>
       </div>
 </body>

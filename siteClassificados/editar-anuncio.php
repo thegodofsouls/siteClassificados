@@ -73,7 +73,7 @@
             $categs = $c->getLista();
             foreach($categs as $categ):
          ?>
-            <option value="<?php echo $categ['id']; ?>" <?php echo ($info['estado'] == $categ['id'])?'selected="selected"':''; ?>><?php echo $categ['nome_categoria']; ?></option>
+            <option value="<?php echo $categ['id']; ?>" <?php echo ($info['id_categoria'] == $categ['id'])?'selected="selected"':''; ?>><?php echo $categ['nome_categoria']; ?></option>
             <?php endforeach; ?>
           </select>
            </div>
@@ -115,8 +115,8 @@
                  </div>
                </div>
            </div>
-
            <button value="submit" class="btn alert-success">Salvar</button>
+           
 </form>
 </div>
 </body>

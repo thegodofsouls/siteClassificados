@@ -1,5 +1,15 @@
 <?php
     class Usuarios{
+
+        public function getTotalUsuarios()
+        {
+            global $conn;
+
+            $sql = $conn->query("SELECT COUNT(*) as c FROM usuarios");
+            $row = $sql->fetch();
+
+            return $row['c'];
+        }
         
         //funçao de cadastro
         public function cadastrar($nome, $email, $senha, $telefone)

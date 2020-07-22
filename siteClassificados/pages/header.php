@@ -22,7 +22,7 @@
         <div class="container-fluid">
             <!-- cabeçalho do nav -->
             <div class="navbar-header">
-                <a class="nav-link text-light" href="#">Classificados</a>
+                <a class="nav-link text-light" href="index.php">Classificados</a>
             </div>
             <ul class="nav navbar-nav navbar-right">
                 <!-- row transforma os li em linha -->
